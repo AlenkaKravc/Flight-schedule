@@ -1,0 +1,52 @@
+{
+  "flights": [
+    {
+      "type": "Arrivals",
+      "delay": false,
+      "number": "4536",
+      "time": "20:55",
+      "title": "Krasnoyarsk",
+      "terminal": "A"
+    },
+    {
+      "type": "Arrivals",
+      "delay": true,
+      "number": "2357",
+      "time": "20:23",
+      "title": "St.Petersburg",
+      "terminal": "D"
+    },
+    {
+      "type": "Departures",
+      "delay": false,
+      "number": "3684",
+      "time": "21:05",
+      "title": "Ufa",
+      "terminal": "C"
+    },
+    {
+      "type": "Arrivals",
+      "delay": false,
+      "number": "1357",
+      "time": "18:46",
+      "title": "Sochi",
+      "terminal": "A"
+    },
+    {
+      "type": "Arrivals",
+      "delay": true,
+      "number": "1124",
+      "time": "19:36",
+      "title": "Kiev",
+      "terminal": "D"
+    },
+    {
+      "type": "Departures",
+      "delay": false,
+      "number": "7522",
+      "time": "22:32",
+      "title": "Rom",
+      "terminal": "A"
+    }
+  ]
+}

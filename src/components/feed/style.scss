@@ -1,0 +1,229 @@
+@import '../../assets/colors';
+@import '../../assets/sizes';
+
+.fullPageBack {
+  position: absolute;
+  top: $header_height + 1.3em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  padding: 0 1em;
+  box-sizing: border-box;
+  min-height: calc(100% - 4.5em);
+}
+
+.fullPageContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  margin-bottom: $footer_height;
+}
+
+.fullPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 1000px;
+  transition: 0.5s ease-in-out;
+}
+
+.flightComponent {
+  font-family: "Open Sans", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  box-shadow: $shadow;
+  background-color: white;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  width: 100%;
+
+  padding: 0.5em 1em;
+}
+
+
+
+.flight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 4em;
+}
+
+.navigatePanel {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.panel {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.headerSearchImg {
+  object-fit: contain;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.headerSearchForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 2.5em;
+}
+
+.headerSearchFromInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  border: none;
+  border-bottom: 2px solid $color_yellow;
+  background: none;
+  font-size: 1.5em;
+}
+
+
+
+.headerSearchFromInput:focus {
+  outline: none;
+}
+.headerSearchFromInput::placeholder {
+  font-size: 1em;
+}
+
+
+.buttonNavigate {
+
+  font-size: 1em;
+  line-height: 1em;
+
+  color: $color_red;
+  font-weight: lighter;
+  transition-duration: 0.3s;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 3em;
+  height: 2em;
+
+  margin: 0em 0.1em;
+  padding: 0 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+
+  &:hover {
+   border-bottom: 2px solid $color_red;
+  }
+}
+
+.buttonNavigateActive {
+  @extend .buttonNavigate;
+
+  border-bottom: 2px solid $color_red;
+
+}
+
+.buttonNavigateSearch {
+  @extend .buttonNavigate;
+
+  color: $color_yellow;
+
+  &:hover {
+    border-bottom: 2px solid $color_yellow;
+  }
+}
+
+.typeFlightImg  {
+  object-fit: contain;
+  width: 2em;
+  height: 2em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.timeFlight {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+
+  position: absolute;
+  left: 3em;
+}
+
+.numberFlight {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+
+  position: absolute;
+  right: 3em;
+}
+
+.titleFlight {
+  @extend .timeFlight;
+
+  font-size: 1.5em;
+  font-weight: bolder;
+  left: 7em;
+}
+
+.terminalFlight {
+  font-size: 1.5em;
+  font-weight: lighter;
+  border-left: 2px solid #e2dcdc;
+  padding: 0.5em;
+}
+
+.message {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4em;
+  font-weight: lighter;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
